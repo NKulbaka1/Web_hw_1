@@ -146,11 +146,14 @@ button:hover {
 .slider li {
   flex-shrink: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider img {
-  width: 100%;
-  height: auto;
+  width: 50%; /* Уменьшаем ширину в 2 раза */
+  height: auto; /* Сохраняем пропорции */
   border-radius: 10px;
 }
 
@@ -166,6 +169,11 @@ button:hover {
   border-radius: 50%;
   font-size: 24px;
   z-index: 10;
+  width: 40px; /* Фиксированная ширина */
+  height: 40px; /* Фиксированная высота */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-button.prev {
