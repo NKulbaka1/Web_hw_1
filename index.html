@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Привет, я Никита!</h1>
+    <h1>Привет!</h1>
     <nav>
       <ul>
         <li><a href="#about">Обо мне</a></li>
@@ -20,35 +20,45 @@
 
   <section id="about">
     <h2>Обо мне</h2>
-    <img src="./resources/ava.jpg" alt="Мое основное фото">
-    <p>Привет! Меня зовут [Имя]. Вот несколько моих фотографий:</p>
+    <p>Привет! Меня зовут Никита. Вот несколько моих фотографий:</p>
     
-    <div class="gallery">
-      <img src="./resources/ava.jpg" alt="Фото 1">
-      <img src="./resources/santa.jpg" alt="Фото 2">
-      <img src="./resources/giga.jpg" alt="Фото 3">
+    <div class="slider-container">
+      <button class="slider-button prev" onclick="scrollSlider(-1)">&#10094;</button>
+      <ul class="slider">
+        <li><img src="./resources/ava.jpg" alt="Фото 1"></li>
+        <li><img src="./resources/santa.jpg" alt="Фото 2"></li>
+        <li><img src="./resources/giga.jpg" alt="Фото 3"></li>
+      </ul>
+      <button class="slider-button next" onclick="scrollSlider(1)">&#10095;</button>
     </div>
   </section>
 
   <section id="hobbies">
     <h2>Мои увлечения</h2>
     <ul>
-      <li>Программирование</li>
-      <li>Фотография</li>
-      <li>Путешествия</li>
+      <li>Жёстко программирую</li>
+      <li>Нереально качаюсь</li>
+      <li>Профессионально жарю стейки</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Контакты</h2>
     <p>Свяжитесь со мной:</p>
-    <a href="mailto:example@example.com">Написать письмо</a>
+    <ul>
+      <li>
+        <a href="nikita.kulbaka@mail.ru">Написать на почту</a>
+      </li>
+      <li>
+        <a href="https://t.me/nkulbaka1" target="_blank">Написать в Telegram</a>
+      </li>
+    </ul>
   </section>
 
   <button id="changeColorButton">Изменить цвет фона</button>
 
   <footer>
-    <p>&copy; 2023 [Ваше имя]</p>
+    <p>&copy; 2025 Никита Кульбака</p>
   </footer>
 
   <script src="script.js"></script>

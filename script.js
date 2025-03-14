@@ -15,3 +15,23 @@ images.forEach(img => {
     img.classList.toggle('zoom');
   });
 });
+
+let currentSlide = 0;
+
+function scrollSlider(direction) {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slider li');
+  const totalSlides = slides.length;
+
+  currentSlide += direction;
+
+  // Зацикливаем слайдер
+  if (currentSlide >= totalSlides) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+  }
+
+  // Прокручиваем слайдер
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}

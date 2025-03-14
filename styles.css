@@ -124,3 +124,58 @@ button:hover {
     padding: 40px;
   }
 }
+
+/* Стили для слайдера */
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+}
+
+.slider li {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
