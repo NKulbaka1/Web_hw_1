@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Обо мне</title>
+  <title>Самопрезентация</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Привет, я [Ваше имя]!</h1>
+    <h1>Привет, я Никита!</h1>
     <nav>
       <ul>
         <li><a href="#about">Обо мне</a></li>
@@ -20,8 +20,14 @@
 
   <section id="about">
     <h2>Обо мне</h2>
-    <img src="https://via.placeholder.com/300" alt="Мое фото">
-    <p>Привет! Меня зовут [Ваше имя]. Я учусь фронтенду и создаю свою первую веб-страницу.</p>
+    <img src="./resources/ava.jpg" alt="Мое основное фото">
+    <p>Привет! Меня зовут [Имя]. Вот несколько моих фотографий:</p>
+    
+    <div class="gallery">
+      <img src="./resources/ava.jpg" alt="Фото 1">
+      <img src="./resources/santa.jpg" alt="Фото 2">
+      <img src="./resources/giga.jpg" alt="Фото 3">
+    </div>
   </section>
 
   <section id="hobbies">
@@ -39,11 +45,11 @@
     <a href="mailto:example@example.com">Написать письмо</a>
   </section>
 
+  <button id="changeColorButton">Изменить цвет фона</button>
+
   <footer>
     <p>&copy; 2023 [Ваше имя]</p>
   </footer>
-
-  <button id="changeColorButton">Изменить цвет фона</button>
 
   <script src="script.js"></script>
 </body>
